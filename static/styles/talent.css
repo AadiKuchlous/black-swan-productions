@@ -1,0 +1,80 @@
+:root {
+  --padding-lr: 12vw;
+  --card-margin: 5vw;
+  --card-size: 300px;
+}
+
+
+.person-card-cont {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--card-margin);
+}
+
+.person-card {
+}
+
+.person-card img {
+  height: var(--card-size);
+  width: var(--card-size);
+}
+
+#all-talent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: fit-content;
+  padding-right: var(--padding-lr);
+  padding-left: var(--padding-lr);
+}
+
+#talent-header {
+  margin-top: 4vw;
+  text-align: center;
+}
+
+.person-card {
+  position: relative;
+  height: var(--card-size);
+  overflow: hidden;
+}
+
+.person-info {
+  position: absolute;
+//  top: var(--card-size);
+  top: 0px;
+  left: 0px;
+  background-color: grey;
+  height: var(--card-size);
+  width: var(--card-size);
+  opacity: 0;
+}
+
+.person-info p {
+  margin: 5%;
+}
+
+.name {
+  font-size: x-large;
+}
+
+.role {
+  font-size: larger;
+}
+
+.person-card:hover {
+  cursor: pointer;
+}
+
+.slideup {
+  opacity: 0.8;
+  animation-name: slideInAnim;
+  animation-duration: 0.5s;
+}
+
+@keyframes slideInAnim {
+  from { top: var(--card-size); }
+  to { top: 0px; }
+}

@@ -1,0 +1,45 @@
+#content {
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+#top {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.person-image {
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
+
+#text-main {
+  display: flex;
+  flex-direction: column;
+  Justify-content: center;
+}
+
+#text-main h1 {
+  margin-bottom: 0.5vw;
+}
+
+#text-main h2 {
+  margin-top: 0px;
+  margin-bottom: 0.5vw;
+}
+
+#text-main h4 {
+  margin-bottom: 0.5vw;
+}
+
+#embeds {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+}
+
+iframe {
+  magin-bottom: 2vw;
+}

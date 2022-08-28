@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+{% import 'macros.html' as macros %}
+
+<meta charset="UTF-8" />
+<title> Black Swan Productions</title>
+
+{% block head %}
+
+<link rel="stylesheet" href="/static/styles/base.css" />
+
+{% endblock %}
+
+</head>
+<body>
+
+{{ macros.navbar() }}
+
+<div id="content">
+  {% block content %}{% endblock %}
+</div>
+
+{% block scripts %}{% endblock %}
+
+<script src="javascript.js"></script>
+
+</body>
+</html>

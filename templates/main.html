@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block head %}
+  {{ super() }}
+
+  <link rel="stylesheet" href="/static/styles/home.css" />
+
+{% endblock %}
+
+{% block content %}
+  <div id="container">
+    <div id="logo-large-left">
+      <img src="{{ url_for('static', filename='images/bls-logo1.png') }}"></img>
+    </div>
+    <div id="coming-soon-text">
+      <h1>Welcome</h1>
+      <div id="welcome-para">Since our opening, we have become masters of our craft. Our commitment to quality products, exceptional services and incomparable customer care keep our community coming back again and agian.</div>
+    </div>
+  </div>
+{% endblock %}

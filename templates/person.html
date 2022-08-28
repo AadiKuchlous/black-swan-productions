@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block head %}
+  {{ super() }}
+
+  <link rel="stylesheet" href="/static/styles/person.css" />
+
+{% endblock %}
+
+{% block content %}
+<div id="top">
+  <img src="/static/images/{{data.img}}" class="person-image" />
+
+  <div id="text-main">
+    <h1>{{data.name}}</h1>
+    <h2>{{data.role}}</h2>
+    <h5>{{data.bio}}</h5>
+  </div>
+</div>
+
+<h2>Featured Works:</h2>
+
+<div id="embeds">
+  {% for embed in data.embeds %}
+    {{ embed|safe }}
+  {% endfor %}
+</div>
+
+{% endblock %}

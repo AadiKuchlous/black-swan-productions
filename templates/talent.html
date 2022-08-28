@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block head %}
+  {{ super() }}
+
+  <link rel="stylesheet" href="/static/styles/talent.css" />
+
+{% endblock %}
+
+{% block content %}
+<h1 id="talent-header">Meet Our Talent</h1>
+<div id="all-talent">
+  {% for person in people %}
+    <div class="person-card-cont">
+      {{ macros.personCard(person) }}
+    </div>
+  {% endfor %}
+</div>
+{% endblock %}
+
+{% block scripts %}
+  {{ super () }}
+
+  <script src="/static/scripts/talentPage.js"></script>
+
+{% endblock %}
