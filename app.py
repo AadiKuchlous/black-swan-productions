@@ -49,7 +49,7 @@ talent_info = [
   }
 ]
 
-@app.route("/")
+@app.route("/home")
 def main():
   return render("main.html")
 
