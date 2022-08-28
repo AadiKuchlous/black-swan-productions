@@ -30,8 +30,7 @@ talent_info = [
     'role': 'Singer',
     'bio': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     'embeds': [
-      '<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/f8z9gPR2LIo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
-      '<iframe src="https://www.veed.io/embed/f1bc7cbb-c33a-4fab-af37-90242bfb914a" width="744" height="504" frameborder="0" title="Keilani - If I Ain\'t Got You" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+      '<iframe width="560" height="315" src="https://www.youtube.com/embed/ZkcsEHYnqjk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
     ]
   },
   {
